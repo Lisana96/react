@@ -1,0 +1,273 @@
+/* --- Global Elements & Reset --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  color: #151515;
+}
+
+.app-wrapper {
+  display: flex;
+  text-align: center;
+  
+  
+  flex-direction: column;
+  min-height: 100vh;
+  
+} 
+
+
+.main-content {
+  flex: 1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #eef3f4;
+  border-radius: 8px;
+  box-shadow: 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Navigation Header Bar --- */
+.navbar {
+  background-color: #010170; /* Deep Navy Blue */
+  padding: 25px 25px;
+  display: flex;
+  font-size:23px ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #5fb74b; /* Soft Sky Blue on Hover */
+}
+
+/* --- Hero Section (Home Page) --- */
+.hero-banner {
+  background-color: #807da3;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-banner h1 {
+  font-size:30px;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 25px;
+  color: #060606;
+  margin-bottom: 25px;
+}
+
+/* --- Standard Action Buttons --- */
+.btn {
+  background-color: #13770b; /* Warm Amber */
+  color: #ffffff;
+  border: 4px 4px solid black;
+  padding: 22px 22px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #23c155;
+}
+
+.btn-secondary {
+  background-color: #3b72c3;
+  color:white;
+  border: 1px solid #cccccc;
+  padding: 15px 16px;
+  margin: 5px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #5365a4;
+}
+
+.btn-small {
+  display: inline-block;
+  background-color: #096730;
+  color: #ffffff;
+  padding: 12px 12px;
+  text-decoration: none;
+  border:4px 4px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-small:hover {
+  background-color: #09d3d0;
+}
+
+.btn-danger {
+  background-color: #e42807; /* Clear Warning Red */
+  color: #ffffff;
+  border: none;
+  font-size:20px ;
+  padding: 10px 10px;
+  
+  cursor: pointer;
+}
+
+
+/* --- Filter & Category Row --- */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* --- Destination Package Grid --- */
+.grid {
+  display: grid;
+  grid-template-columns:1fr ;
+  border:4px 4px solid black;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #c4c09c;
+  border: 4px 4px solid #100f0f;
+font-size: 25px;
+  padding: 2px;
+  text-align: center;
+  box-shadow:4px 4px solid black;
+}
+
+.price-tag {
+  color: #050b82; /* Healthy Green for money */
+  font-weight: bold;
+  font-size: 27px;
+}
+
+/* --- User Booking Form Blocks --- */
+.small-form-box {
+  max-width: 480px;
+  margin: 40px auto;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-layout label {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.form-layout input, 
+.form-layout textarea {
+  padding: 15px;
+  margin-top: 5px;
+  border: 4px solid #150707;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.total-indicator {
+  background-color: #e8f5e9;
+  border: 2px solid #202221;
+  padding: 19px;
+  border-radius: 4px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* --- Bookings Summary Items --- */
+.booking-list {
+  margin-top: 29px;
+}
+
+.booking-item {
+  background-color: #acb7c5;
+  border: 4px solid #191818;
+  border-radius: 5px;
+  color: #151515;
+  padding: 15px;
+  font-size: 20px ;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-item h4 {
+  margin: 0 0 5px 0;
+}
+
+.booking-item p {
+  margin: 0;
+  color: #102c99;
+  font-size: 30px;
+}
+
+/* --- Profile Account Card --- */
+.profile-card {
+  padding: 20px;
+  text-align: center;
+}
+
+.avatar-circle {
+  width: 220px;
+  
+  background-color: #55049b;
+  color: #f6eeee;
+  border-radius: 10%;
+  font-size: 30px;
+  font-weight: bold;
+  line-height:70px ;
+  margin: 50px auto;
+}
+
+/* --- Utility Notification Displays --- */
+.center-text {
+  text-align: center;
+  font-size:25px ;
+}
+
+.success-banner {
+  background-color: #136213;
+  border: 2px 2px solid #111211;
+  color: rgb(252, 255, 253);
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 2px;
+}
+
+/* --- Base Structural Footer --- */
+.footer {
+  background-color: #0a0462;
+  color: #f0f3f5;
+  text-align: center;
+  padding:12px ;
+  margin-top: 30px;
+  font-size: 19px;
+}
